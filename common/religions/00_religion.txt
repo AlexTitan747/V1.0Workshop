@@ -2260,8 +2260,8 @@ pagan = {
 		color = { 127 115 115 }
 		icon = 13
 		country = {
-			tolerance_own = 1
-			global_unrest = -1
+			infantry_power = 0.15
+			global_unrest = -2
 		}
 		country_as_secondary = {
 			tolerance_own = 2
@@ -2282,7 +2282,7 @@ pagan = {
 		color = { 64 115 115 }
 		icon = 18
 		country = {
-			tolerance_own = 1
+			idea_cost = -0.1
 			global_autonomy = -0.05
 		}
 
