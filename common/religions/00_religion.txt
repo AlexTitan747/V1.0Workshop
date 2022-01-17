@@ -1433,7 +1433,7 @@ eastern = {
 			mahayana
 		}
 		country = {
-			tolerance_heretic = 2
+			technology_cost = -0.05
 			advisor_cost = -0.1
 		}
 		country_as_secondary = {
@@ -1466,8 +1466,8 @@ eastern = {
 			buddhism #Theravada
 		}
 		country = {
-			tolerance_heretic = 1
-			land_morale = 0.05
+			fire_damage_received = -0.1
+			defensiveness = 0.1
 		}
 		country_as_secondary = {
 			horde_unity = 1
@@ -1499,7 +1499,7 @@ eastern = {
 			buddhism #Theravada
 		}
 		country = {
-			tolerance_heretic = 2
+			backrow_artillery_damage = 0.1
 			idea_cost = -0.05
 		}
 		country_as_secondary = {
@@ -1529,7 +1529,7 @@ eastern = {
 		icon = 9
 		country = {
 			tolerance_heretic = 2
-			adm_tech_cost_modifier = -0.1
+			technology_cost = -0.05
 		}
 		country_as_secondary = {
 			adm_tech_cost_modifier = -0.1
@@ -1615,7 +1615,7 @@ dharmic = {
 			shiite
 		}
 		country = {
-			mil_tech_cost_modifier = -0.1
+			land_forcelimit_modifier = 0.1
 			land_morale = 0.1
 		}
 		country_as_secondary = {
@@ -2224,8 +2224,8 @@ pagan = {
 		color = { 127 0 0 }
 		icon = 11
 		country = {
-			tolerance_own = 1
-			global_unrest = -1
+			trade_steering = 0.15
+			global_unrest = -4
 		}
 		country_as_secondary = {
 			tolerance_own = 2
