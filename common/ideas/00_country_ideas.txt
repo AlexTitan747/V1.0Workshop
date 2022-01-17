@@ -3914,7 +3914,7 @@ ETH_ideas = {
 	}
 	
 	bonus = {
-		legitimacy = 1
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -3927,9 +3927,11 @@ ETH_ideas = {
 	}
 	nagusa_negast = {
 		heir_chance = 0.5
+		legitimacy = 1
 	}
 	hostile_borders = {
 		defensiveness = 0.20
+		war_exhaustion = -0.03
 	}
 	diplomatic_demeanor = {
 		diplomatic_reputation = 1
@@ -3941,7 +3943,7 @@ ETH_ideas = {
 		core_creation = -0.10
 	}
 	eth_reformed_armies = {
-		infantry_power = 0.1
+		army_tradition = 0.5
 	}
 }
 
