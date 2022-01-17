@@ -1,0 +1,17 @@
+version="1"
+tags={
+	"Balance"
+	"Events"
+	"Fixes"
+	"Gameplay"
+	"Map"
+	"Missions And Decisions"
+	"National Ideas"
+	"New Nations"
+	"Religion"
+	"Technologies"
+	"Trade"
+}
+name="Titan Balance V1.0"
+supported_version="1.32.2"
+remote_file_id="2656266679"
