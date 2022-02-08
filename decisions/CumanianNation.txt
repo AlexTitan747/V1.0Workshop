@@ -13,10 +13,11 @@ country_decisions = {
 				NOT = { exists = CMN }
 				NOT = { tag = MOS }
 				NOT = { tag = RUS }
-				NOT = { tag = TIM }
+				#NOT = { tag = TIM }
 				NOT = { tag = PER }
 				NOT = { tag = PLC }
 				is_colonial_nation = no
+				has_reform = steppe_horde
 				OR = {
 					is_former_colonial_nation = no
 					AND = {
@@ -42,8 +43,6 @@ country_decisions = {
 			provinces_to_highlight = {
 				OR = {
 				province_id = 464			# Astrakhan
-				province_id = 284			# Crimea
-				province_id = 286			# Azov
 				province_id = 465			# Nogay
 				province_id = 303			# Saratov
 				province_id = 2444			# Bashgird
@@ -52,9 +51,7 @@ country_decisions = {
 				province_id = 1075			# Chimigi Tura
 				province_id = 2355			# Narym
 				province_id = 1970			# syghnac
-				province_id = 1945			# severija
-				province_id = 425			# dagestan
-				province_id = 466			# sarai
+				province_id = 286			# azov
 				}
 					
 				OR = {
@@ -68,8 +65,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				is_at_war = no
 				owns_core_province = 464			# Astrakhan
-				owns_core_province = 284			# Crimea
-				owns_core_province = 286			# Azov
 				owns_core_province = 465			# Nogay
 				owns_core_province = 303			# Saratov
 				owns_core_province = 2444			# Bashgird
@@ -78,9 +73,7 @@ country_decisions = {
 				owns_core_province = 1075			# Chimigi Tura
 				owns_core_province = 2355			# Narym
 				owns_core_province = 1970			# syghnac
-				owns_core_province = 1945			# severija
-				owns_core_province = 425			# dagestan
-				owns_core_province = 466			# sarai
+				owns_core_province = 286			# azov
 				
 				
 			}
@@ -103,12 +96,16 @@ country_decisions = {
 					name = centralization_modifier
 					duration = 3650
 				}
+				add_country_modifier = {
+					name = return_of_the_true_faith
+					duration = 7300
+				}
 				set_capital = 464 # Astrakhan
 				if = {
                 limit = { is_revolutionary = no }
                 change_government = tribal
-                add_government_reform = great_horde_state_reform
-            }
+           		}
+				add_government_reform = great_horde_state_reform
 				set_country_flag = formed_cumania_flag
 				if = {
 				limit = { has_custom_ideas = no }

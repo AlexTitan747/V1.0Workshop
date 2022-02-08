@@ -13,7 +13,7 @@ country_decisions = {
 				NOT = { exists = KUS }
 				NOT = { tag = MRY }
 				NOT = { tag = RUS }
-				NOT = { tag = TIM }
+				#NOT = { tag = TIM }
 				NOT = { tag = PER }
 				NOT = { tag = SLU }
 				NOT = { tag = BAB }
@@ -61,6 +61,7 @@ country_decisions = {
 			allow = {
 				NOT = { exists = KUS }
 				is_free_or_tributary_trigger = yes
+				adm_tech = 10
 				is_at_war = no
 				owns_core_province = 451			# Kabul
 				owns_core_province = 446			# Herat
@@ -114,25 +115,25 @@ country_decisions = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KUS
+					add_permanent_claim = ROOT
 				}
 				khorasan_region = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KUS
+					add_permanent_claim = ROOT
 				}
 				northern_sindh_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KUS
+					add_permanent_claim = ROOT
 				}
 				sindh_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KUS
+					add_permanent_claim = ROOT
 				}
 				set_country_flag = formed_kushan_flag
 				if = {

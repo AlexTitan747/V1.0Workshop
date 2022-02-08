@@ -1,3 +1,44 @@
+mil_policy_40 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = justice_ideas
+		has_idea_group = assault_ideas
+	}
+	allow = {
+		full_idea_group = justice_ideas
+		full_idea_group = assault_ideas
+	}
+	
+	fire_damage = 0.1
+	shock_damage = 0.1
+	
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}		
+	}
+}
+
 mil_policy_39 = {
 	monarch_power = MIL
 
@@ -271,7 +312,7 @@ mil_policy_29 = {
 		full_idea_group = exploration_ideas
 	}
 
-	ship_durability = 0.15
+	ship_durability = 0.05
 	leader_naval_manuever = 1
 	
 	ai_will_do = {
@@ -297,7 +338,7 @@ mil_policy_28 = {
 		full_idea_group = expansion_ideas
 	}
 
-	cavalry_power = 0.1
+	infantry_power = 0.1
 	
 	
 	ai_will_do = {
@@ -349,8 +390,8 @@ mil_policy_26 = {
 		full_idea_group = religious_ideas
 	}
 
-	shock_damage_received = -0.05
-	fire_damage_received = -0.05
+	shock_damage_received = -0.1
+	fire_damage_received = -0.1
 	
 	ai_will_do = {
 		factor = 0.6
@@ -505,8 +546,7 @@ mil_policy_20 = {
 		full_idea_group = innovative_ideas
 	}
 
-	fort_maintenance_modifier = -0.2
-	garrison_size = 0.1
+	backrow_artillery_damage = 0.10
 	
 	ai_will_do = {
 		factor = 0.6
@@ -609,8 +649,7 @@ mil_policy_16 = {
 		full_idea_group = influence_ideas
 	}
 
-	local_hostile_attrition = 1
-	global_garrison_growth = 0.1
+	land_forcelimit_modifier = 0.15
 	
 	ai_will_do = {
 		factor = 0.6
@@ -687,7 +726,7 @@ mil_policy_13 = {
 		full_idea_group = expansion_ideas
 	}
 
-	infantry_power = 0.1
+	cavalry_power = 0.1
 	
 	
 	ai_will_do = {
@@ -1011,4 +1050,5 @@ mil_policy_1 = {
 		}
 	}
 }
+
 

@@ -9,11 +9,11 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			NOT = { tag = QNG }
 			NOT = { exists = WUU }
 			technology_group = chinese
-			culture_group = yue
+			culture_group = yue_group
 
-			mil_tech = 9
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -25,23 +25,21 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				
+				province_id = 2158		# guangdong capital state
+				province_id = 2157		
+				province_id = 2156		
+				province_id = 667	
 					
-			owns_core_province = 2158		# guangdong capital state
-			owns_core_province = 2157		
-			owns_core_province = 2156		
-			owns_core_province = 667		
-				
-			owns_core_province = 665		# guangxi capital state
-			owns_core_province = 2159		
-			owns_core_province = 2161		
-			owns_core_province = 666
-			owns_core_province = 2160			
-				
-			owns_core_province = 671
-			owns_core_province = 683
-			owns_core_province = 669
-			owns_core_province = 2149
+				province_id = 665		# guangxi capital state
+				province_id = 2159		
+				province_id = 2161		
+				province_id = 666
+				province_id = 2160			
+					
+				province_id = 671
+				province_id = 683
+				province_id = 669
+
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -52,7 +50,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			
 				
 			owns_core_province = 2158		# guangdong capital state
 			owns_core_province = 2157		
@@ -68,7 +65,6 @@ country_decisions = {
 			owns_core_province = 671
 			owns_core_province = 683
 			owns_core_province = 669
-			owns_core_province = 2149
 		}
 		effect = {
 			if = {
@@ -80,11 +76,17 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			if = {
 				limit = {
+					government = monarchy
+				}
+				add_government_reform = warring_kingdom_reform
+			}
+			if = {
+				limit = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
 			}
-			
+
 			
 			add_prestige = 25
 			add_country_modifier = {

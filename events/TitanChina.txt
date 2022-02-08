@@ -35,7 +35,6 @@ country_event = {
 		tag = WEI
 		tag = WUU
 		}
-		is_year = 1444
 		NOT = {
 		has_country_flag = chinagov_duchy
 		}
@@ -60,7 +59,7 @@ option = {
 		add_country_modifier = { 
 				name = china_fractured
 				duration = -1
-				hidden = no
+				#hidden = no
 			}
 		}
 }
@@ -74,7 +73,7 @@ option = {
 		add_country_modifier = { 
 			name = china_fractured
 			duration = -1
-			hidden = no
+			#hidden = no
 			}
 		}
 }
@@ -88,7 +87,6 @@ option = {
 		add_country_modifier = { 
 			name = china_fractured
 			duration = -1
-			hidden = no
 			}
 		}
 }
@@ -126,7 +124,6 @@ country_event = {
 		tag = WEI
 		tag = WUU
 		}
-		is_year = 1500
 		total_development = 400
 		NOT = {
 		has_country_flag = chinagov_kingdom
@@ -175,7 +172,7 @@ option = {
 		add_country_modifier = { 
 			name = china_semiconsolidated
 			duration = -1
-			hidden = no
+			#hidden = no
 			}
 		}
 	}
@@ -215,7 +212,7 @@ option = {
 		add_country_modifier = { 
 			name = china_semiconsolidated
 			duration = -1
-			hidden = no
+			#hidden = no
 			}
 		}
 	}
@@ -255,7 +252,7 @@ option = {
 		add_country_modifier = { 
 			name = china_semiconsolidated
 			duration = -1
-			hidden = no
+			#hidden = no
 			}
 		}		
 	}
@@ -292,7 +289,6 @@ country_event = {
 		tag = WEI
 		tag = WUU
 		}
-		is_year = 1550
 		total_development = 1000
 		NOT = {
 		has_country_flag = chinagov_empire
@@ -340,7 +336,7 @@ option = {
 		add_country_modifier = { 
 			name = china_consolidated
 			duration = -1
-			hidden = no
+			#hidden = no
 			}
 		}
 }
@@ -381,7 +377,7 @@ option = {
 		add_country_modifier = { 
 			name = china_consolidated
 			duration = -1
-			hidden = no
+			#hidden = no
 			}
 		}
 }
@@ -421,7 +417,7 @@ option = {
 		add_country_modifier = { 
 			name = china_consolidated
 			duration = -1
-			hidden = no
+			#hidden = no
 			}
 		}
 }

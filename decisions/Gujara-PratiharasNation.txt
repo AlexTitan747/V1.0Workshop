@@ -12,7 +12,7 @@ country_decisions = {
 				}
 				NOT = { exists = GJP }
 				NOT = { tag = MRY }
-				NOT = { tag = TIM }
+				#NOT = { tag = TIM }
 				NOT = { tag = CAK }
 				NOT = { tag = SND }
 				is_colonial_nation = no
@@ -80,8 +80,7 @@ country_decisions = {
 				region = west_india_region
 				culture = malvi
 				is_core = root
-				
-			}
+				}
 				
 			}
 			effect = {
@@ -112,7 +111,7 @@ country_decisions = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GJP
+					add_permanent_claim = ROOT
 				}
 				set_country_flag = formed_gujaran_flag
 				if = {

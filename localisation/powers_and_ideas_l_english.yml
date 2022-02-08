@@ -6742,7 +6742,7 @@
  pis_maritimes_legacy_desc:1 "For centuries Pisa was one of the dominant powers in the Mediterranean, controlling the trade and spreading its influence. While only being the shadow of the great power that once Pisa was, its legacy is still there. Pisa remembers."
  pis_fund_the_masnada:0 "Fund the Masnada"
  pis_fund_the_masnada_desc:1 "To protect our beloved nation we need an army. To build an army we need men. With an appropriate amount of money we can convince some of the local free companies to enlist in our militia."
-AKS_ideas:0 "Aksumite Ideas"
+ AKS_ideas:0 "Aksumite Ideas"
  AKS_ideas_start:0 "Aksumite Traditions"
  AKS_ideas_bonus:0 "Aksumite Ambition"
  aks_stellae_builders:0 "Stellae Builders"
@@ -6909,4 +6909,3 @@ AKS_ideas:0 "Aksumite Ideas"
  people_of_exile_desc:0 "Being more accustomed to travel because of our history, our people have it quite easy to settle new land."
  the_chosen_people:0 "The Chosen People"
  the_chosen_people_desc:0 "The Jews are the chosen people of God, with his divine will we shall never again lose Israel to our old enemies again."
-

@@ -853,7 +853,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -940,6 +939,7 @@ country_decisions = {
 			NOT = { tag = GER }
 			NOT = { tag = PRU }
 			NOT = { tag = SWI }
+			NOT = { tag = CFR }
 			NOT = { exists = WES }
 			NOT = { has_reform = celestial_empire }
 			OR = {
@@ -1021,7 +1021,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

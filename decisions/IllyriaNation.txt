@@ -13,7 +13,7 @@ country_decisions = {
 				NOT = { exists = ILY }
 				NOT = { tag = MOS }
 				NOT = { tag = RUS }
-				NOT = { tag = TIM }
+				#NOT = { tag = TIM }
 				NOT = { tag = PER }
 				NOT = { tag = PLC }
 				is_colonial_nation = no
@@ -67,9 +67,6 @@ country_decisions = {
 				is_at_war = no
 				
 				AND = {
-						adm_tech = 8
-					}
-				AND = {
 					ROOT = {
 							num_of_owned_provinces_with = {
 								value = 20
@@ -120,7 +117,7 @@ country_decisions = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = ILY
+					add_permanent_claim = ROOT
 				}
 			}
 			

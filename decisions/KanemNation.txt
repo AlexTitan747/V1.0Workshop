@@ -1,11 +1,10 @@
 country_decisions = {
 
-		kanem_nation = {
+		kanem_empire_nation = {
 			major = yes
 			potential = {
 				normal_or_historical_nations = yes
-				was_never_end_game_tag_trigger = yes
-				NOT = { has_country_flag = formed_kanem_flag }
+				NOT = { has_country_flag = formed_kanem_empire_flag }
 				OR = {
 					ai = no
 					is_playing_custom_nation = no
@@ -22,10 +21,7 @@ country_decisions = {
 						ai = no
 					}
 				}
-				OR = {
-					culture_group = west_african
-					culture_group = mande
-				}
+				culture_group = west_african
 				
 				OR = {
 					ai = no
@@ -61,7 +57,7 @@ country_decisions = {
 				owns_core_province = 1158			# Kanem
 				
 				AND = {
-						adm_tech = 8
+						adm_tech = 6
 					}
 				OR = {
 					AND = {
@@ -75,7 +71,6 @@ country_decisions = {
 					move_capital_effect = yes
 				}
 				change_tag = KNE
-				swap_non_generic_missions = yes
 				
 				remove_non_electors_emperors_from_empire_effect = yes
 				if = {
@@ -93,41 +88,41 @@ country_decisions = {
 				if = {
                 limit = { is_revolutionary = no }
 				}
-				set_country_flag = formed_kanem_flag
 				if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-				}
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+					}
 				niger_region = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KNE
+					add_permanent_claim = ROOT
 				}
 				benin_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KNE
+					add_permanent_claim = ROOT
 				}
 				gulf_of_guinea_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KNE
+					add_permanent_claim = ROOT
 				}
 				sahel_region = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KNE
+					add_permanent_claim = ROOT
 				}
 				kongo_region = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = KNE
+					add_permanent_claim = ROOT
 				}
+				set_country_flag = formed_kanem_empire_flag
 			}
 			
 		}

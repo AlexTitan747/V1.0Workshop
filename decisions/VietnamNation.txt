@@ -12,7 +12,7 @@ country_decisions = {
 				}
 				NOT = { exists = VTM }
 				NOT = { tag = MRY }
-				NOT = { tag = TIM }
+				#NOT = { tag = TIM }
 				NOT = { tag = BAH }
 				is_colonial_nation = no
 				OR = {
@@ -68,7 +68,6 @@ country_decisions = {
 			}
 			
 			allow = {
-				dip_tech = 10
 				NOT = { exists = VTM }
 				is_free_or_tributary_trigger = yes
 				is_at_war = no
@@ -120,43 +119,43 @@ country_decisions = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = VTM
+					add_permanent_claim = ROOT
 				}
 				indo_china_region = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = VTM
+					add_permanent_claim = ROOT
 				}
 				north_tenasserim_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = VTM
+					add_permanent_claim = ROOT
 				}
 				tenasserim_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = VTM
+					add_permanent_claim = ROOT
 				}
 				luzon_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = VTM
+					add_permanent_claim = ROOT
 				}
 				southern_luzon_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = VTM
+					add_permanent_claim = ROOT
 				}
 				brunei_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = VTM
+					add_permanent_claim = ROOT
 				}
 				set_country_flag = formed_vietnam_flag
 				if = {

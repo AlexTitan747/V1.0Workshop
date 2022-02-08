@@ -6,7 +6,6 @@ estate_nobles =
 	trigger = {
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = cossacks_reform }
 		NOT = { government = native }
 		NOT = { has_reform = trading_city }
@@ -42,6 +41,7 @@ estate_nobles =
 			has_parliament = no
 		}
 		NOT = { has_reform = revolutionary_empire_reform }
+		NOT = { has_reform = parliamentary_reform }
 	}
 
 	country_modifier_happy = {
@@ -213,6 +213,25 @@ estate_nobles =
 	
 	#Alternative naming of estates
 	custom_name = {
+		desc = estate_oyo_mesi
+		trigger = {
+			tag = OYO
+		}
+	}
+	custom_name = {
+		desc = estate_nakomse
+		trigger = {
+			primary_culture = mossi
+			religion = shamanism
+		}
+	}
+	custom_name = {
+		desc = estate_chieftains
+		trigger = {
+			has_reform = tribal_confederacy
+		}
+	}
+	custom_name = {
 		desc = estate_beys
 		trigger = {
 			technology_group = ottoman
@@ -322,7 +341,61 @@ estate_nobles =
 		}
 	}
 
-	color = { 200 0 50 }
+	custom_name = {
+		desc = estate_alii
+		trigger = {
+			OR = {
+				capital_scope = {
+					area = northern_polynesia_area
+				}
+				tag = SAM
+			}
+			primary_culture = polynesian
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_rangatira
+		trigger = {
+			primary_culture = maori
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_eiki
+		trigger = {
+			tag = TOG
+			primary_culture = polynesian
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_ratu
+		trigger = {
+			OR = {
+				tag = LAI
+				tag = VIL
+				tag = VNL
+			}
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_warriors
+		trigger = {
+			OR = {
+				government = native
+				has_reform = siberian_tribe
+				has_reform = native_basic_reform
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_mani
+		trigger = {
+			tag = KON
+		}
+	}	color = { 200 0 50 }
 	
 	privileges = {
 		estate_nobles_land_rights

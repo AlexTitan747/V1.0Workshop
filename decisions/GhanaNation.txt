@@ -4,7 +4,6 @@ country_decisions = {
 			major = yes
 			potential = {
 				normal_or_historical_nations = yes
-				was_never_end_game_tag_trigger = yes
 				NOT = { has_country_flag = formed_ghani_flag }
 				OR = {
 					ai = no
@@ -22,10 +21,7 @@ country_decisions = {
 						ai = no
 					}
 				}
-				OR = {
-					culture_group = west_african
-					culture_group = mande
-				}
+				culture_group = mande
 				
 				OR = {
 					ai = no
@@ -61,7 +57,7 @@ country_decisions = {
 				owns_core_province = 1122			# Bagoe
 				
 				AND = {
-						adm_tech = 8
+						adm_tech = 6
 					}
 				OR = {
 					AND = {
@@ -75,7 +71,6 @@ country_decisions = {
 					move_capital_effect = yes
 				}
 				change_tag = GHN
-				swap_non_generic_missions = yes
 				
 				remove_non_electors_emperors_from_empire_effect = yes
 				if = {
@@ -102,55 +97,55 @@ country_decisions = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 				guinea_region = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 				sahel_region = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 				tafilalt_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 				sus_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 				southern_morocco_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 				western_morocco_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 				marrekesh_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 				northern_morocco_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = GHN
+					add_permanent_claim = ROOT
 				}
 			}
 			

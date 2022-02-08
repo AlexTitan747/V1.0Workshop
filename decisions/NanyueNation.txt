@@ -12,7 +12,7 @@ country_decisions = {
 				}
 				NOT = { exists = NYU }
 				NOT = { tag = MRY }
-				NOT = { tag = TIM }
+				NOT = { tag = QNG }
 				NOT = { tag = BAH }
 				is_colonial_nation = no
 				OR = {
@@ -56,7 +56,7 @@ country_decisions = {
 			}
 			
 			allow = {
-				adm_tech = 7
+				#adm_tech = 9
 				NOT = { exists = NYU }
 				is_free_or_tributary_trigger = yes
 				is_at_war = no
@@ -75,6 +75,12 @@ country_decisions = {
 				change_tag = NYU
 				swap_non_generic_missions = yes
 				remove_non_electors_emperors_from_empire_effect = yes
+				if = {
+					limit = {
+						government = monarchy
+					}
+					add_government_reform = warring_kingdom_reform
+				}
 				if = {
 					limit = {
 						NOT = { government_rank = 2 }
@@ -96,7 +102,7 @@ country_decisions = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
-					add_permanent_claim = NYU
+					add_permanent_claim = ROOT
 				}
 				
 				set_country_flag = formed_nanyue_flag
