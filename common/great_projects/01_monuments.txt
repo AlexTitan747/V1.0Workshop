@@ -14134,13 +14134,13 @@ porcelain_tower_nanjing = {
 	type = monument
 
 	build_trigger = {
-	OR = {
-		culture_group = yue_group
-		culture_group = han_group
-		culture_group = tibetan
+		OR = {
+			culture_group = yue_group
+			culture_group = han_group
+			culture_group = tibetan_group
+			}
+			province_is_or_accepts_culture = yes
 		}
-		province_is_or_accepts_culture = yes
-	}
 
 	on_built = {
 	}
