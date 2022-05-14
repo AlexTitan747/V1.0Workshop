@@ -407,11 +407,303 @@ EPC_ideas = {
 		}
 	}
 	
-	########################################CHINA##########################################################
+	########################################Titan Formables##########################################################
 	
-	CFR_ideas = {
+	ZRD_ideas = {
+		start = {
+			infantry_power = 0.15
+			naval_forcelimit_modifier = 0.25
+		}
+		bonus = {
+			land_morale = 0.1
+		}
+		trigger = {
+			tag = ZRD
+		}
+		free = yes
+		mor_powerful_viziers = {
+			advisor_cost = -0.2
+			discipline = 0.05
+		}
+		mor_marabouts = {
+			idea_cost = -0.1
+			monthly_piety = -0.001
+		}
+		trans_saharan_trade = {
+			trade_efficiency = 0.1
+			caravan_power = 0.2
+		}
+		mor_fleet = {
+			galley_power = 0.2
+		}
+		great_agricultural_dynasties = {
+			global_trade_goods_size_modifier = 0.1
+		}
+		slave_soldiers = {
+			land_maintenance_modifier = -0.15
+			hostile_attrition = 1
+		}
+		curb_power_of_the_tribes = {
+			global_autonomy = -0.05
+		}
+	}
+
+	IDA_ideas = {
+		start = {
+			discipline = 0.05
+			global_manpower_modifier = 0.20
+		}
+		bonus = {
+			backrow_artillery_damage = 0.15
+		}
+		trigger = {
+			tag = IDA
+		}
+		free = yes
+		
+		garba = {
+			religious_unity = 0.5
+		}
+		sophisticated_civil_service = {
+			advisor_cost = -0.1
+			global_autonomy = -0.05
+		}
+		great_indian_empire = {
+			prestige = 1
+			land_morale = 0.1
+		}
+		unification_of_the_subcontinent = {
+			core_creation = -0.15
+			diplomatic_reputation = 1
+		}
+		indian_ocean_trading_power = {
+			global_trade_power = 0.2
+			naval_forcelimit_modifier = 0.15
+		}
+		spice_trade = {
+			production_efficiency = 0.1
+			development_cost = -0.1
+		}
+		private_successful_commercial_businesses = {
+			global_trade_goods_size_modifier = 0.10
+		}
+	}
+	
+	HSL_ideas = {
+		start = {
+			idea_cost = -0.1
+			development_cost = -0.1
+		}
+		
+		bonus = {
+			trade_efficiency = 0.10
+		}
+		
+		trigger = {
+			tag = HSL
+		}
+		free = yes
+		
+		restore_brothers_of_the_sword = {
+			defensiveness = 0.2
+			discipline = 0.05
+		}
+		strong_trade_league_obligations = {
+			merchants = 1
+			global_trade_power = 0.15
+		}
+		hsa_shipbuilding = {
+			global_ship_cost = -0.15
+			ship_durability = 0.05
+		}
+		reform_of_the_hanstag = {
+			stability_cost_modifier = -0.2
+			tolerance_own = 2
+		}
+		hanseatic_armies = {
+			manpower_recovery_speed = 0.2
+		}
+		regularised_contribution = {
+			global_prov_trade_power_modifier = 0.20
+		}
+		hansa_bank = {
+			production_efficiency = 0.15
+			interest = -0.5
+		}
+	}
+	
+	AQI_ideas = {
+		start = {
+			defensiveness = 0.1
+			global_manpower_modifier = 0.10
+		}
+		
+		bonus = {
+			discipline = 0.05
+		}
+		
+		trigger = {
+			tag = AQI
+		}
+		free = yes
+		
+		french_la_petite_nation = {
+			land_morale = 0.1
+		}
+		renaissance_palaces = {
+			prestige = 1 
+		}
+		french_diplomats = {
+			diplomatic_reputation = 1
+			diplomatic_upkeep = 1
+		}
+		french_religious_conviction = {
+			tolerance_own = 2
+		}
+		french_cuisine = {
+			global_manpower_modifier = 0.15
+		}
+		the_philosophes = {
+			technology_cost = 0.1
+		}
+		french_men_of_trade = {
+			global_trade_power = 0.10
+		}
+	}
+
+	DNL_ideas = {
+		start = {
+			prestige = 1
+			global_tax_modifier = 0.10
+		}
+		
+		bonus = {
+			global_trade_goods_size_modifier = 0.15
+		}
+		
+		trigger = {
+			tag = DNL
+		}
+		free = yes		#will be added at load.
+	
+		under_the_raven_banner = {
+			infantry_power = 0.2
+			discipline = 0.05
+		}
+		vornedskab = {
+			global_manpower_modifier = 0.2
+			global_sailors_modifier = 0.2
+		}
+		old_maritime_traditions = {
+			naval_morale = 0.1
+			galley_power = 0.15
+		}
+		rentekammer = {
+			build_cost = -0.15
+		}
+		rule_of_the_earls = {
+			state_maintenance_modifier = -0.15
+			global_regiment_cost = -0.1
+		}
+		the_rule_of_law = {
+			stability_cost_modifier = -0.15
+		}
+		legacy_of_cnut_the_great = {
+			shock_damage_received = -0.15
+		}
+	}
+
+
+
+
+	EJA_ideas = {
 		start = {
 			trade_goods_size_modifier = 0.1
+			prestige = 1
+		}
+	
+		bonus = {
+			backrow_artillery_damage = 0.1
+		}
+		
+		trigger = {
+			tag = EJA
+		}
+		free = yes
+		
+		populate_the_region = {
+			colonists = 1
+			may_explore = yes
+		}
+		hindu_resurgence = {
+			global_missionary_strength = 0.02
+			manpower_in_true_faith_provinces = 0.15
+		}
+		eja_nusantara_tributaries = {
+			vassal_forcelimit_bonus = 1
+			liberty_desire = -10
+		}
+		control_the_spice = {
+			global_ship_trade_power = 0.15
+			global_own_trade_power = 0.15
+		}
+		gajah_madas_oath = {
+			land_morale = 0.15
+		}
+		the_majapahit_armada = {
+			naval_forcelimit_modifier = 0.10
+			galley_power = 0.15
+		}
+		reformed_bhattara_saptaprabhu = {
+			advisor_cost = -0.15
+		}
+	}
+
+	ANG_ideas = {
+		start = {
+			infantry_power = 0.10 
+			global_unrest = -2
+		}
+	
+		bonus = {
+			free_leader_pool = 1
+		}
+		
+		trigger = {
+			tag = ANG
+		}
+		free = yes		#will be added at load.
+	
+		acts_of_union = {
+			manpower_recovery_speed = 0.15
+			governing_capacity_modifier = 0.1
+		}
+		french_military_thought = {
+			land_morale = 0.15
+		}
+		dominance_of_the_channel = {
+			global_trade_power = 0.1
+		}
+		the_royal_societies = {
+			technology_cost = -0.05
+			idea_cost = -0.05
+		}
+		red_coats = {
+			discipline = 0.05
+			fire_damage_received = -0.10
+		}
+		angevin_industrialization = {
+			global_trade_goods_size_modifier = 0.2
+		}
+		navy_of_the_empire = {
+			naval_forcelimit_modifier = 0.15
+			allowed_marine_fraction = 0.10
+		}
+	}
+
+	CFR_ideas = {
+		start = {
+			production_efficiency = 0.10
 			caravan_power = 0.2
 		}
 	
@@ -436,7 +728,7 @@ EPC_ideas = {
 			diplomats = 1
 			ae_impact = -0.15
 		}
-		welcome_reformers = {
+		welcome_the_reformers = {
 			tolerance_own = 3
 		}
 		the_rhine_basin = {
@@ -445,10 +737,10 @@ EPC_ideas = {
 		}
 		the_use_of_mercenaries = {
 			land_forcelimit_modifier = 0.2
-			global_regiment_cost = -0.1
+			global_regiment_cost = -0.05
 		}
 		german_craftsmenship = {
-			fire_damage = 0.1
+			fire_damage = 0.05
 			backrow_artillery_damage = 0.1
 		}
 	}
@@ -704,48 +996,6 @@ EPC_ideas = {
 		}
 	}
 	
-	ANG_ideas = {
-		start = {
-			naval_morale = 0.10
-			heavy_ship_power = 0.10
-		}
-	
-		bonus = {
-			navy_tradition = 1
-		}
-		
-		trigger = {
-			tag = ANG
-		}
-		free = yes		#will be added at load.
-	
-		gbr_acts_of_union = {
-			diplomatic_annexation_cost = -0.15
-			governing_capacity_modifier = 0.1
-		}
-		city_upon_a_hill = {
-			global_colonial_growth = 20
-		}
-		british_merchant_navy = {
-			global_tariffs = 0.15
-		}
-		gbr_the_royal_society = {
-			technology_cost = -0.05
-		}
-		red_coats = {
-			discipline = 0.05
-			fire_damage_received = -0.10
-		}
-		british_industrialization = {
-			global_trade_goods_size_modifier = 0.2
-		}
-		britanna_rules_the_waves = {
-			leader_naval_manuever = 1
-			blockade_efficiency = 0.33
-			allowed_marine_fraction = 0.10
-		}
-	}
-	
 	PAG_ideas = {
 		start = {
 			land_morale = 0.1
@@ -805,25 +1055,25 @@ EPC_ideas = {
 		land_of_ngazargamu = {
 			production_efficiency = 0.1	
 		}
-		sayfawad_dynasty = { 
+		istanbulewa_dynasty = { 
 			land_morale = 0.15
 		}
 		alumas_reforms = {
 			global_trade_goods_size_modifier = 0.1
 		}
-		house_of_kanem = {
+		house_of_kanem_empire = {
 			global_missionary_strength = 0.02
 			tolerance_own = 2
 		}
-		fixed_military_camps = {
+		military_camp_traditions = {
 			shock_damage_received = -0.2
 			global_manpower_modifier = 0.2
 		}
-		clan_head_council = {
+		clan_council = {
 			prestige = 1
 			legitimacy = 1
 		}
-		duties_on_sahara_trade = {
+		saharan_trade_duties = {
 			global_trade_power = 0.10
 		}
 	
@@ -1377,7 +1627,7 @@ EPC_ideas = {
 		}
 		armed_forces_of_the_sultan = {
 			global_manpower_modifier = 0.10
-			amount_of_banners = 0.2
+			mercenary_manpower = 0.15
 		}
 	}
 	
@@ -1585,6 +1835,7 @@ EPC_ideas = {
 		}
 		integration_of_the_hungarian_army = {
 			global_manpower_modifier = 0.15
+			discipline = 0.05
 		}
 		hungarian_peasant_labour = {
 			production_efficiency = 0.10
@@ -1597,7 +1848,7 @@ EPC_ideas = {
 
 	CMN_ideas = {
 		start = {
-			horde_unity = 4
+			horde_unity = 2
 			movement_speed = 0.10		
 		}
 		bonus = {
@@ -1607,8 +1858,10 @@ EPC_ideas = {
 			tag = CMN
 		}
 		free = yes
+		cmn_dreams_of_siberia = {
+			colonists = 1
+		}
 		cmn_cuman_horses = {
-			cav_to_inf_ratio = 0.25
 			cavalry_power = 0.30
 		}
 		cmn_across_the_endless_steppes = {
@@ -1625,13 +1878,10 @@ EPC_ideas = {
 		}
 		cmn_tengri_conquest = {
 			land_morale = 0.10
-			missionary_strength = 0.02
+			global_missionary_strength = 0.02
 		}
 		cmn_gold_of_the_east = {
 			production_efficiency = 0.10
-		}
-		cmn_dreams_of_siberia = {
-			colonists = 1
 		}
 	}
 	
@@ -1837,3 +2087,373 @@ SHY_ideas = {
 		global_manpower_modifier = 0.25
 	}
 }
+
+################Colonial Tags##############################
+
+CHL_ideas = {
+	start = {
+		global_autonomy = -0.05
+		no_religion_penalty = yes
+	}
+	
+	bonus = {
+		global_institution_spread = 0.1
+	}
+	
+	trigger = {
+		tag  = LAP
+	}
+	free = yes
+	
+	the_patagonian_revolution = {
+		republican_tradition = 0.5
+		prestige = 0.5
+	}
+	aonikenk_heritage = {
+		land_morale = 0.15
+	}
+	agricultural_industry = {
+		production_efficiency = 0.15
+	}
+	superior_education = {
+		technology_cost = -0.1
+	}
+	ranching_practices = {
+		manpower_recovery_speed = 0.15
+	}
+	colonisation_of_the_interior = {
+		state_maintenance_modifier = -0.1
+		global_colonial_growth = 15
+	}
+	strong_and_giant_peoples = {
+		shock_damage_received = -0.15
+		fire_damage_received = -0.15
+	}
+}
+
+LAP_ideas = {
+	start = {
+		global_autonomy = -0.05
+		no_religion_penalty = yes
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+	
+	trigger = {
+		tag  = LAP
+	}
+	free = yes
+	
+	the_argentine_revolution = {
+		republican_tradition = 0.5
+		land_morale = 0.10
+	}
+	surviving_the_blockades = {
+		caravan_power = 0.1
+	}
+	agricultural_industry = {
+		production_efficiency = 0.15
+	}
+	superior_education = {
+		technology_cost = -0.1
+	}
+	imigration_policies = {
+		global_manpower_modifier = 0.25
+	}
+	colonisation_of_the_interior = {
+		state_maintenance_modifier = -0.1
+		global_colonial_growth = 15
+	}
+	argentine_generals = {
+		leader_land_shock = 2
+		leader_land_manuever = 2
+	}
+}
+
+PEU_ideas = {
+	start = {
+		manpower_recovery_speed = 0.1
+		republican_tradition = 0.5
+	}
+	
+	bonus = {
+		artillery_power = 0.1
+	}
+	
+	trigger = {
+		tag = PEU
+	}
+	free = yes
+	
+	legacy_of_the_inca = {
+		fire_damage = 0.15
+	}
+	trade_centre = {
+		trade_efficiency = 0.2
+		trade_steering = 0.15
+	}
+	gold_and_silver_mining = {
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	peruvian_navy = {
+		ship_durability = 0.05
+	}
+	the_army_of_san_martin = {
+		discipline = 0.05
+	}
+	new_frontiers = {
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 20
+	}
+	new_world_missionaries = {
+		missionaries = 1
+		tolerance_own = 2
+	}
+}
+
+COL_ideas = {
+	start = {
+		development_cost = -0.05
+		republican_tradition = 0.5
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag  = COL
+	}
+	free = yes
+	
+	great_gran_colombia = {
+		prestige = 1
+	}
+	trade_with_the_indies = {
+		global_trade_power = 0.15
+	}
+	resguardos_encomiendas_and_haciendas = {
+		build_cost = -0.1
+		global_tax_modifier = 0.1
+	}
+	royal_botanical_expedition = {
+		advisor_cost = -0.1
+		embracement_cost = -0.2
+	}
+	armies_of_bolivar = {
+		land_morale = 0.15
+	}
+	new_frontiers = {
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 20
+	}
+	fort_of_cartagena = {
+		defensiveness = 0.15
+	}
+}
+
+CAM_ideas = {
+	start = {
+		merc_maintenance_modifier = -0.1
+		production_efficiency = 0.15
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = CAM
+	}
+	free = yes
+	
+	the_federal_republic = {
+		republican_tradition = 1
+	}
+	route_to_the_gold_rush = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	encomienda_system = {
+		build_cost = -0.1
+		development_cost = -0.05
+	}
+	free_thinkers = {
+		idea_cost = -0.1
+	}
+	spanish_catholicism = {
+		global_unrest = -2
+		manpower_in_true_faith_provinces = 0.15
+	}
+	founding_of_cities = {
+		colonists = 1
+		global_colonial_growth = 20
+	}
+	shipbuilders_of_honduras = {
+		naval_maintenance_modifier = -0.1
+		naval_morale = 0.1
+	}
+}
+
+CAL_ideas = {
+	start = {
+		development_cost = -0.05
+		fire_damage = 0.15
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.15
+	}
+	
+	trigger = {
+		tag  = CAL
+	}
+	free = yes
+	
+	diverse_heritage = {
+		same_culture_advisor_cost = -0.15
+		culture_conversion_cost = -0.1
+	}
+	gold_and_trade = {
+		global_prov_trade_power_modifier = 0.15
+		interest = -0.5
+	}
+	agricultural_valleys = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	free_thinkers = {
+		idea_cost = -0.1
+	}
+	california_one_hundred = {
+		global_manpower_modifier = 0.15
+	}
+	unfettered_immigration = {
+		num_accepted_cultures = 2
+	}
+	bear_flag_revolt = {
+		land_morale = 0.1
+	}
+}
+
+LOU_ideas = {
+	start = {
+		tolerance_own = 2
+		shock_damage = 0.1
+	}
+	
+	bonus = {
+		cavalry_power = 0.2
+	}
+	
+	trigger = {
+		tag = LOU
+	}
+	free = yes
+	
+	plantation_economy = {
+		production_efficiency = 0.15
+	}
+	adventurers_of_new_orleans = {
+		discipline = 0.05
+		cav_to_inf_ratio = 0.25
+	}
+	trading_canals_and_infrastructure = {
+		movement_speed = 0.1
+	}
+	customs_of_paris = {
+		global_tax_modifier = 0.15
+		state_maintenance_modifier = -0.1
+	}
+	creole_people = {
+		global_regiment_cost = -0.1
+	}
+	mercantilist_policies = {
+		global_trade_power = 0.15
+	}
+	the_mighty_mississippi = {
+		manpower_recovery_speed = 0.15
+	}
+}
+
+FLO_ideas = {
+	start = {
+		technology_cost = -0.1
+		republican_tradition = 0.5
+	}
+	
+	bonus = {
+		ship_durability = 0.05
+	}
+	
+	trigger = {
+		tag = FLO
+	}
+	free = yes
+	
+	spanish_heritage = {
+		global_naval_engagement_modifier = 0.1
+		global_ship_trade_power = 0.15
+	}
+	continental_trade = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	the_sugar_plantations = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	floridian_cannons = {
+		artillery_power = 0.15
+	}
+	east_and_west_florida = {
+		global_unrest = -2
+	}
+	american_settlers = {
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 20
+	}
+	the_seminoles = {
+		land_morale = 0.10
+	}
+}
+
+ILI_ideas = {
+	start = {
+		development_cost = -0.05
+		production_efficiency = 0.1
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.2
+	}
+	
+	trigger = {
+		tag = ILI
+	}
+	free = yes
+	
+	cahokian_heritage = {
+		shock_damage_received = -0.15
+	}
+	the_fur_trade = {
+		global_own_trade_power = 0.15
+	}
+	the_northwest_territory = {
+		land_morale = 0.15
+	}
+	puritan_influence = {
+		institution_spread_from_true_faith = 0.2
+		global_missionary_strength = 0.02
+	}
+	the_great_lakes = {
+		global_manpower_modifier = 0.2
+	}
+	westward_expansion = {
+		colonists = 1
+		global_colonial_growth = 20
+	}
+	slavery_free = {
+		global_autonomy = -0.05
+	}
+}
+

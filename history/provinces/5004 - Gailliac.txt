@@ -1,0 +1,22 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Gailliac
+add_core = TOU
+owner = TOU
+controller = TOU
+culture = occitain
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 5
+trade_goods = wine
+base_manpower = 3
+capital = "Gailliac"
+is_city = yes
+extra_cost = 0
+
+add_province_triggered_modifier=defense_of_iberia
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim

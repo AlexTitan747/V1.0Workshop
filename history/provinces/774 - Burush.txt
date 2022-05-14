@@ -1,0 +1,15 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Burush
+add_core = WAD
+owner = WAD
+controller = WAD
+culture = tunjur
+religion = shamanism
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = slaves
+base_manpower = 1
+capital = "Burush"
+is_city = yes
+discovered_by = sub_saharan

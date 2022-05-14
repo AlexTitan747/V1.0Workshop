@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Amadi
+culture = acholi
+religion = shamanism
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 1
+trade_goods = unknown
+native_size = 40
+native_ferocity = 4
+native_hostileness = 6
+capital = "Amadi"
+is_city = no
+
+
+discovered_by = muslim
+discovered_by = east_african
+discovered_by = central_african

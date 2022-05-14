@@ -1,0 +1,142 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "mission_coa_shield_france"
+		texturefile = "gfx//interface//missions//mission_coa_shield_france.dds"
+	}
+
+	spriteType = {
+		name = "mission_milan_flag"
+		texturefile = "gfx//interface//missions//mission_milan_flag.dds"
+	}
+	
+	spriteType = {
+		name = "mission_italy_map"
+		texturefile = "gfx//interface//missions//mission_italy_map.dds"
+	}
+
+	spriteType = {
+		name = "mission_venetian_flag"
+		texturefile = "gfx//interface//missions//mission_venetian_flag.dds"
+	}
+
+	spriteType = {
+		name = "mission_mf_italy_coa"
+		texturefile = "gfx//interface//missions//mission_mf_italy_coa.dds"
+	}
+
+	spriteType = {
+		name = "mission_mf_papal_states_coa"
+		texturefile = "gfx//interface//missions//mission_mf_papal_states_coa.dds"
+	}
+
+	spriteType = {
+		name = "mission_mf_two_sicilies_coa"
+		texturefile = "gfx//interface//missions//mission_mf_two_sicilies_coa.dds"
+	}
+
+	spriteType = {
+		name = "mission_aragon_flag2"
+		texturefile = "gfx//interface//missions//mission_aragon_flag2.dds"
+	}
+
+	spriteType = {
+		name = "mission_aragon_flag"
+		texturefile = "gfx//interface//missions//mission_aragon_flag.dds"
+	}
+
+	spriteType = {
+		name = "mission_spain_heraldry"
+		texturefile = "gfx//interface//missions//mission_spain_heraldry.dds"
+	}
+
+	spriteType = {
+		name = "mission_medieval_siege"
+		texturefile = "gfx//interface//missions//mission_medieval_siege.dds"
+	}
+	
+	spriteType = {
+		name = "mission_camel_cataphracts_prt_sas"
+		texturefile = "gfx//interface//missions//mission_camel_cataphracts_prt_sas.dds"
+	}
+
+	spriteType = {
+		name = "mission_iberian_map"
+		texturefile = "gfx//interface//missions//mission_iberian_map.dds"
+	}
+
+	spriteType = {
+		name = "mission_map_london_britannia"
+		texturefile = "gfx//interface//missions//mission_map_london_britannia.dds"
+	}
+
+	spriteType = {
+		name = "mission_mf_england_coa"
+		texturefile = "gfx//interface//missions//mission_mf_england_coa.dds"
+	}
+	
+	spriteType = {
+		name = "mission_march_on_england"
+		texturefile = "gfx//interface//missions//mission_march_on_england.dds"
+	}
+
+	spriteType = {
+		name = "mission_crowned_by_clergy"
+		texturefile = "gfx//interface//missions//mission_crowned_by_clergy.dds"
+	}
+
+	spriteType = {
+		name = "mission_french_flag"
+		texturefile = "gfx//interface//missions//mission_french_flag.dds"
+	}
+
+	spriteType = {
+		name = "mission_persian_heavy_cataphract_cavalry"
+		texturefile = "gfx//interface//missions//mission_persian_heavy_cataphract_cavalry.dds"
+	}
+
+	spriteType = {
+		name = "mission_azar_goshnasp_sas"
+		texturefile = "gfx//interface//missions//mission_azar_goshnasp_sas.dds"
+	}
+
+	spriteType = {
+		name = "mission_levant_cypus_map_17th"
+		texturefile = "gfx//interface//missions//mission_levant_cypus_map_17th.dds"
+	}
+	
+	spriteType = {
+		name = "mission_ottoman_army_1830s"
+		texturefile = "gfx//interface//missions//mission_ottoman_army_1830s.dds"
+	}
+
+	spriteType = {
+		name = "mission_map_mesopotamia_antique"
+		texturefile = "gfx//interface//missions//mission_map_mesopotamia_antique.dds"
+	}
+
+	spriteType = {
+		name = "mission_arabian_trade"
+		texturefile = "gfx//interface//missions//mission_arabian_trade.dds"
+	}
+
+	spriteType = {
+		name = "mission_chinese_officials_in_line"
+		texturefile = "gfx//interface//missions//mission_chinese_officials_in_line.dds"
+	}
+
+	spriteType = {
+		name = "mission_korean_turtleship"
+		texturefile = "gfx//interface//missions//mission_korean_turtleship.dds"
+	}
+
+	spriteType = {
+		name = "mission_chinese_fortress_siege"
+		texturefile = "gfx//interface//missions//mission_chinese_fortress_siege.dds"
+	}
+
+	spriteType = {
+		name = "mission_destroy_byzantium"
+		texturefile = "gfx//interface//missions//mission_destroy_byzantium.dds"
+	}
+}

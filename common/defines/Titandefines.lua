@@ -6,6 +6,9 @@ NDefines.NDiplomacy.HRE_VOTE_ROYAL_MARRIAGE = 30
 NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12
 NDefines.NDiplomacy.NUM_OF_GREAT_POWERS = 4
 NDefines.NDiplomacy.MIN_RELATIONS_TO_ALLY = -200
+NDefines.NDiplomacy.SHAREMAP_PRESTIGE_TRANSFER_LOSE = 0
+NDefines.NDiplomacy.SHAREMAP_PRESTIGE_TRANSFER_GAIN = 0
+NDefines.NDiplomacy.CHANGE_RIVAL_YEARS = 10
 
 NDefines.NCountry.CONCENTRATE_DEVELOPMENT_COOLDOWN_DURATION = -1
 NDefines.NCountry.GOLDEN_ERA_YEARS = 20
@@ -31,6 +34,9 @@ NDefines.NCountry.PS_REPLACE_RIVAL = 0
 NDefines.NCountry.PS_HARSH_TREATMENT_REDUCE = 50
 NDefines.NCountry.PS_ADD_ACCEPTED_CULTURE = 80
 NDefines.NCountry.BREAK_ALLIANCE_REQUIRED_OPINION = -200
+NDefines.NCountry.PS_ARTILLERY_BARRAGE = 40
+NDefines.NCountry.PS_NAVAL_BARRAGE = 20
+NDefines.NCountry.NOMAD_DEVELOPMENT_SCALE = 1000
 
 NDefines.NEconomy.AUTONOMY_AT_DIPLO_ANNEX = 40
 NDefines.NEconomy.ALLOW_DESTROY_MANUFACTORY = 1
@@ -47,8 +53,22 @@ NDefines.NMilitary.ARTILLERY_SPEED = 0.6
 NDefines.NMilitary.WARGOAL_MAX_BONUS = 40
 NDefines.NMilitary.SUPERIORITY_WARGOAL_WARSCORE_THRESHOLD = 25
 NDefines.NMilitary.WARSCORE_MAX_FROM_BATTLES = 50
-
---moved to AI defines
+NDefines.NMilitary.SUPPLY_DEPOT_DURATION_MONTHS = 120			-- Time until supply depot is removed.
+NDefines.NMilitary.SUPPLY_DEPOT_MIL_COST = 10					-- Mil power cost to build a supply depot in an area.
+NDefines.NMilitary.MARINE_SHOCK_DAMAGE_TAKEN = -0.10
+NDefines.NMilitary.MARINE_DISEMBARK_SPEED_BONUS = 1.0			-- marine disembark speed bonus
+NDefines.NMilitary.NOMAD_PLAINS_SHOCK_BONUS = 0.10
+NDefines.NMilitary.NOMAD_NON_PLAINS_SHOCK_PENALTY = -0.10
+NDefines.NMilitary.MERCENARY_COMPANY_HIRING_COST_MONTHS = 60		-- Initial hiring cost in months of maintenance
+NDefines.NMilitary.MERCENARY_COMPANY_STARTING_MORALE = 0.1		-- Starting morale
+NDefines.NMilitary.MERCENARY_COMPANY_MIN_REGIMENTS = 4		-- Minimum regiments
+NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40			-- Maximum regiments
+NDefines.NMilitary.MERCENARY_COMPANY_MANPOWER_PER_REGIMENT = 2.0	-- Manpower reserve factor (multiplied by 1000 per regiment)
+NDefines.NMilitary.MERCENARY_COMPANY_MANPOWER_RECOVERY = 60				-- How many months to recover mercenary manpower fully
+NDefines.NMilitary.MERCENARY_COMPANY_HIRED_MANPOWER_RECOVERY_MOD = 2.0	-- How much to modify the length for manpower recovery if they are hired
+NDefines.NMilitary.MERCENARY_COMPANY_BUILDING_TIME = 0			-- Multiply province distance with this
+NDefines.NMilitary.GARRISON_SIZE = 1000
+NDefines.NMilitary.SIEGE_FORCE_NEEDED_MULTIPLIER = 3
 
 NDefines.NReligion.KARMA_RESTORE_ON_RULER_DEATH = 50
 
@@ -56,6 +76,12 @@ NDefines.NGovernment.CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0
 NDefines.NGovernment.CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0
 NDefines.NGovernment.FREE_CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0
 NDefines.NGovernment.FREE_CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0
+NDefines.NGovernment.GOVERNMENT_REFORM_BASE_COST = 100.0
+NDefines.NGovernment.GOVERNMENT_REFORM_COST_INCREASE = 50.0
+NDefines.NGovernment.GOVERNMENT_REFORM_YEARLY_BASE_PROGRESS = 10.0
+NDefines.NGovernment.GOVERNMENT_REFORM_HISTORIC_AUTONOMY = 0.25
+NDefines.NGovernment.GOVERNMENT_REFORM_CHANGE_PROGRESS_COST = 10.0
+NDefines.NGovernment.GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 100.0
 
 NDefines.NGraphics.AGGRESSIVE_EXPANSION_RED_R = 1.0
 NDefines.NGraphics.AGGRESSIVE_EXPANSION_RED_G = 0.1

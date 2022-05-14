@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = english_monarchy
+technology_group = western
+primary_culture = english
+add_accepted_culture = gascon
+add_accepted_culture = normand
+religion = catholic
+capital = 245 # York
+
+1424.1.1 = {
+	monarch = {
+		name = "Edward IV"
+		culture = english
+		dynasty = "York"
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = industrious_personality
+}

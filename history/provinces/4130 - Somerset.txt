@@ -1,7 +1,7 @@
 #4130 - Somerset
 
-owner = ENG
-controller = ENG
+owner = HLA
+controller = HLA
 culture = english
 religion = catholic
 hre = no
@@ -11,7 +11,7 @@ trade_goods = wool
 base_manpower = 1
 capital = "Bath"
 is_city = yes
-add_core = ENG
+add_core = HLA
 add_core = CRN
 discovered_by = western
 discovered_by = muslim

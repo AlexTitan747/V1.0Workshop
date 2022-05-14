@@ -3,6 +3,7 @@ country_decisions = {
 	cascadia_nation = {
 		major = yes
 		potential = {
+			ai = no
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			was_never_end_game_tag_trigger = yes
 			is_nomad = no
@@ -48,8 +49,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
-			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_alaska

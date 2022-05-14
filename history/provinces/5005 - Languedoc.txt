@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Languedoc
+add_core = MNP
+owner = MNP
+controller = MNP
+culture = occitain
+religion = catholic
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = cloth
+base_manpower = 3
+capital = "Languedoc"
+is_city = yes
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim

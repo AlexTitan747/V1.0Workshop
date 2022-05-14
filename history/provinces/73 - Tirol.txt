@@ -3,7 +3,7 @@
 owner = HAB
 controller = HAB
 add_core = HAB
-add_core = TIR
+
 culture = austrian
 religion = catholic
 center_of_trade = 1

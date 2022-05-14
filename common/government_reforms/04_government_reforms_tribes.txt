@@ -49,33 +49,6 @@ steppe_horde = {
 	}
 }
 
-great_horde_state_reform = {
-	icon = "horde_riding"
-	allow_normal_conversion = yes
-	lock_level_when_selected = yes
-	potential = {
-		OR = {
-			has_reform = great_horde_state_reform
-			have_had_reform = great_horde_state_reform
-			tag = CMN
-			tag = GLH
-			tag = BGR
-		}
-	}
-	legacy_equivalent = great_mongol_state_legacy
-	fixed_rank = 3
-	valid_for_nation_designer = no
-	nomad = yes
-	modifiers = {
-		horde_unity = 2
-		global_manpower_modifier = 0.2
-		reinforce_cost_modifier = -0.5
-		cavalry_cost = -0.1
-		movement_speed = 0.1
-	}
-
-}
-
 great_mongol_state_reform = {
 	icon = "horde_riding"
 	allow_normal_conversion = yes
@@ -359,6 +332,7 @@ horde_barbaric_despoilers_reform = {
 		OR = {
 			has_reform = steppe_horde
 			has_reform = great_mongol_state_reform
+			has_reform = great_horde_state_reform
 		}
 		has_dlc = "The Cossacks"
 	}
@@ -378,6 +352,7 @@ horde_tribal_unity_reform = {
 		OR = {
 			has_reform = steppe_horde
 			has_reform = great_mongol_state_reform
+			has_reform = great_horde_state_reform
 		}
 		has_dlc = "The Cossacks"
 	}
@@ -394,9 +369,7 @@ tribe_becomes_monarchy_reform = {
 	icon = "king_highlighted"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { 
-			has_reform = stateless_society
-		}
+		exists = HIN
 	}
 	trigger = {
 		NOT = { has_government_attribute_short_desc = locked_government_type }
@@ -487,6 +460,9 @@ tribe_becomes_monarchy_reform = {
 tribe_becomes_republic_reform = {
 	icon = "parliament_highlighted"
 	allow_normal_conversion = yes
+	potential = {
+		exists = HIN
+	}
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
 		NOT = { has_government_attribute_short_desc = locked_government_type }
@@ -599,9 +575,7 @@ tribe_becomes_theocracy_reform = {
 	icon = "pope_highlighted"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { 
-			has_reform = stateless_society
-		}
+		exists = HIN
 	}
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
@@ -719,6 +693,7 @@ tribe_becomes_horde_reform = {
 			has_reform = tribe_becomes_horde_reform
 		}
 		NOT = { has_reform = great_mongol_state_reform }
+		NOT = { has_reform = great_horde_state_reform }
 		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
 	ai = {
@@ -730,17 +705,14 @@ tribe_remain_tribal_reform = {
 	icon = "rioting_burning_2"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			AND = {
-				NOT = { has_reform = steppe_horde }
-				NOT = { has_reform = great_mongol_state_reform }
-			}
-			NOT = { has_dlc = "The Cossacks" }
-		}
 	}
 	modifiers = {
+		horde_unity = 1
 		legitimacy = 0.5
 		war_exhaustion = -0.02
+	}
+	ai = {
+		factor = 2.5
 	}
 }
 
@@ -748,17 +720,20 @@ tribe_tribal_unity = {
 	icon = "fist_in_air"
 	allow_normal_conversion = yes
 	potential = {
-		has_reform = tribal_federation
-		has_dlc = "Cradle of Civilization"
+		#has_reform = tribal_federation
+		#has_dlc = "Cradle of Civilization"
 	}
 	modifiers = {
+		state_maintenance_modifier = -0.25
 		yearly_tribal_allegiance = 1
 		church_loyalty_modifier = 0.05
 		nobles_loyalty_modifier = 0.05
 		dhimmi_loyalty_modifier = 0.05
 		burghers_loyalty_modifier = 0.05
+		nomadic_aristocracy_loyalty_modifier = 0.05
+		nomadic_tribes_loyalty_modifier = 0.05
 	}
 	ai = {
-		factor = 2
+		factor = 5
 	}
 }

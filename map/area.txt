@@ -282,13 +282,17 @@ bahama_channel_area = {
 # France					 		   #
 ########################################
 
+bordeaux_area = { 4112  5002  5001 
+	173  174  4111
+}
+
 brittany_area = { #5
 	color = { 118  99  151 }
 
 	169 170 171 172 4384
 }
 
-normandy_area = { #4
+normandy_area = { 5012   #4
 	167 168 1879 4385
 }
 
@@ -297,19 +301,23 @@ provence_area = { #3
 }
 
 poitou_area = { #4
-	180 4111 4386 4387 4697
+	180 4386 4387 4697
 }
 
-guyenne_area = { #4
-	194 4112 174 195
+guyenne_area = { 196  5003  #4
+	194 4112 195
 }
 
 pyrenees_area = { #4
-	175 173 176 4694
+	175 176 4694
 }
 
-languedoc_area = { #5
-	200 2753 4695 196 198
+languedoc_area = { 199  4777  190  198  4391   5004  #5
+	 2753 4695 196 
+}
+
+montpellier_area = {
+	198 200 4391 5006  5005
 }
 
 bourgogne_area = { #3
@@ -321,9 +329,9 @@ west_burgundy_area = { #3
 	191 1877 4392
 }
 
-massif_central_area = { #3
+massif_central_area = { 5008  5007  #3
 	color = { 26 26 217 }
-	190 199 4777 4391
+	190 199 4777 
 }
 
 savoy_dauphine_area = { #3 Savoy and Dauphiné, Upper Burgundy 
@@ -338,20 +346,23 @@ picardy_area = { #4
 	87 88 89 1743
 }
 
-ile_de_france_area = { #4
-	182 183 185 4388
+ile_de_france_area = { 5019  5018  5017  183  4388    #4
+	
 }
 
-champagne_area = { #3
-	181 186 4390
+champagne_area = { 5015  5014  5013  182  181  #3
 }
 
-loire_area = { #5
+reims_area = { 5016  185  186  4390 
+	
+}
+
+loire_area = { 5010  5009  #5
 	color = { 231 143 5 }
 	177 178 4389
 }
 
-orleans_area = {
+orleans_area = {  5011 
 	184 179 4776
 }
 
@@ -451,7 +462,7 @@ alentejo_area = { #5
 }
 
 macaronesia_area = { #3
-	366 367 368 4565
+	366 367 368 4565 1096
 }
 
 ########################################
@@ -1064,7 +1075,7 @@ northern_greece_area = { #3 #Northern Greece
 	142 144 147 4699 4698
 }
 
-thrace_area = { #5
+thrace_area = {  1127  1164  #5
 	149 151 1764 4779 4705
 }
 
@@ -1351,6 +1362,18 @@ syrian_desert_area = { #3
 # North Africa					       #
 ########################################
 
+siwa_area = { 4984  4983  4982  4981 
+	
+}
+
+butnan_area = { 4988  4987  4986  4985 
+
+}
+
+zaltan_area = { 4992  4991  4990  4989 
+	
+}
+
 gulf_of_arabia_area = { #5
 	color = { 19 219 75 }
 	365 2315 2320 2321
@@ -1429,7 +1452,7 @@ sus_area = { #4
 	348 2464 2466 4568
 }
 
-southern_morocco_area = { #3
+southern_morocco_area = { 4942   #3
 	347 1110 2470 
 }
 
@@ -1445,9 +1468,20 @@ northern_morocco_area = { #5
 	334 335 1751 4563 4561
 }
 
+mauritania_area = { 4943  4946  4945  4944  1111
+}
+
 ########################################
 # East Africa					       #
 ########################################
+
+nyala_area = { 4997  4996  4995  4994  2932
+
+}
+
+medwa_area = { 1219  5000  4999  4998  774 
+
+}
 
 madagascar_highlands_area = { #3
 	1792 4023 4027
@@ -1590,12 +1624,12 @@ ogaden_area = { #5
 }
 
 darfur_central_sahara_area = { #5
-	774 1219 2801 2802 2932
+	
 }
 
 kurdufan_area = { #3
 	color = { 97 110 203 }
-	1216 1221 2800
+	1216 1221 2800  2801 2802
 }
 
 lower_nubia_area = { #3
@@ -1665,6 +1699,14 @@ ajuuran_area = { #4
 
 majarteen_area = { #5
 	1206 2024 2783 2784 2788 
+}
+
+urgoma_area = { 
+	4956  4955  4954  4953  4952 
+}
+
+imatong_area = { 4960  4959  4958  4957 
+	
 }
 
 ########################################
@@ -1775,12 +1817,32 @@ te_waipounamu_area = { #3
 # West Africa					       #
 ########################################
 
-western_sahara_area = { #5
+gabon_area = { 4980  4979  4978  4976 
+	
+}
+
+inner_cameroon_area = { 4975  4974  4973  4972 
+	
+}
+
+upper_niger_area = { 4963  4962  4961 
+	
+}
+
+lola_area = { 4967  4966  4965  4964 
+	
+}
+
+comoe_area = { 4971  4970  4969  4968 
+	
+}
+
+western_sahara_area = { 4993  #5
     1127 1128 1129 1130 2271
 }
 
 cap_verde_area = { #2 
-    1096 1111 
+
 }
 
 jolof_area = { #4
@@ -1871,7 +1933,7 @@ atacora_oueme_area = { #5
     1140 1143 2291 2292 2295
 }
 
-gulf_of_guinea_area = { #4
+gulf_of_guinea_area = { 4977  #4
     1151 1163 1164 1165
 }
 
@@ -1907,8 +1969,12 @@ kongo_area = { #5
 	798 1169 1170 1901 2949
 }
 
-angola_namibia_area = { #5
-	1098 1167 1171 1172 1174 
+angola_namibia_area = {  4947  #5
+	1098 1167 1171 1172 
+}
+
+namibia_area = {
+	4951  4950  4949  4948 1174
 }
 
 cape_of_good_hope_area = { #5

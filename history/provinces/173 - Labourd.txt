@@ -1,0 +1,25 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Labourd
+add_core = FOI
+owner = FOI
+controller = FOI
+culture = gascon
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wine
+base_manpower = 4
+capital = "Labourd"
+is_city = yes
+extra_cost = 0
+fort_15th = yes
+
+add_permanent_claim = AQI
+
+add_province_triggered_modifier=defense_of_iberia
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

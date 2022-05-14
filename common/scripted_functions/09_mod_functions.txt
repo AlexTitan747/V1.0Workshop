@@ -1,0 +1,29 @@
+can_increase_autonomy = {
+	condition = {
+		potential = {
+			owner = {
+				ai = yes
+			}	
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_decrease_autonomy = {
+
+}
+
+can_harsh_treatment = {
+	condition = {
+		potential = {
+			owner = {
+				ai = yes
+			}	
+		}
+		allow = {
+			always = no
+		}
+	}
+}

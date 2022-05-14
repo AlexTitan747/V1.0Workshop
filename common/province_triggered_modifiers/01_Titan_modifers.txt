@@ -1,756 +1,760 @@
 
-
-titan_ai_banner = {
+ defense_of_iberia = {
 	potential = {
-		owner = {
-		ai = yes
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_ai_banner
-				}
-			}
-		}
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
-	}
-
-	local_amount_of_banners = -999
-}
-
-titan_banner_0 = {
-	potential = {
 		owner = {
-			total_development = 1
-			NOT = { total_development = 100 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
+			OR = {
+				tag = CAS
+				tag = SPA
+				tag = ARA
+				tag = POR
+				tag = PBR
 				}
 			}
 		}
+
+	defensiveness = 0.15
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+italian_defensive_effort = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_province_flag = italy_existed
 	}
 
 	trigger = {
+		owner = {
+			OR = {
+				tag = ITA
+				tag = ROM
+				}
+			}
 	}
 
-	local_amount_of_banners = 10
+	local_defensiveness = 0.05
+	garrison_growth = 0.1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_100 = {
+defense_of_france = {
 	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
 		owner = {
-			total_development = 101
-			NOT = { total_development = 200 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
+			OR = {
+				tag = FRA
 				}
 			}
 		}
+
+	defensiveness = 0.15
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+occupation_of_copinghagen = {
+	potential = {
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
-	}
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = DAN
+						tag = DAN
+					}
+				}  
+			}
+		controlled_by = ROOT	
+		}
 
-	local_amount_of_banners = 20
+	infantry_power = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_200 = {
+new_ruler_of_the_waves = {
 	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
 		owner = {
-			total_development = 201
-			NOT = { total_development = 300 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
+				NOT = {
+					OR = {
+						was_tag = ENG
+						tag = ENG
+					}
+				}  
+			}
+		controlled_by = ROOT	
+		}	
+
+	naval_morale = 0.05
+	ship_durability = 0.01
+	infantry_power = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+french_traditions = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = FRA
+						tag = FRA
+					}
+				}  
+			}
+		controlled_by = ROOT	
+		}	
+
+	land_morale = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+fall_of_toledo_fortress = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = CAS
+						tag = CAS
+					} 
+				} 
+				NOT = {
+					OR = {
+						was_tag = ARA 
+						tag = ARA
+					} 
+				} 
+				NOT = {
+					OR = {
+						was_tag = POR
+						tag = POR
+					} 
 				}
 			}
-		}
+		controlled_by = ROOT	
+		}	
+
+	infantry_power = 0.025
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+fall_of_constantinople = {
+	potential = {
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
-	}
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = TUR
+						tag = TUR
+					} 
+				} 
+				NOT = {
+					OR = {
+						was_tag = BYZ
+						tag = BYZ
+					} 
+				} 
+			}
+		controlled_by = ROOT	
+		}	
 
-	local_amount_of_banners = 30
+	idea_cost = -0.05
+	stability_cost_modifier = -0.1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_300 = {
+collapse_of_cairo = {
 	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
 		owner = {
-			total_development = 301
-			NOT = { total_development = 400 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
+				NOT = {
+					OR = {
+						was_tag = MAM 
+						tag = MAM
+					} 
+				} 
+			}
+		controlled_by = ROOT	
+		}	
+
+	war_exhaustion = -0.05
+	caravan_power = 0.05
+	infantry_power = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+stolen_swedish_stockholm = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = SWE 
+						tag = SWE
+					} 
+				}  
+			}
+		controlled_by = ROOT	
+		}	
+
+	galley_power = 0.05
+	prestige = 0.025
+	infantry_power = 0.025
+
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+
+owner_of_moscow = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_province_flag = russia_existed
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = RUS }
+			}
+		controlled_by = ROOT	
+		}	
+
+	discipline = 0.025
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+destruction_of_delhi = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = DLH 
+						tag = DLH
+					} 
+				} 
+				NOT = {
+					OR = {
+						was_tag = SRH 
+						tag = SRH
+					} 
+				} 
+			}
+		controlled_by = ROOT	
+		}
+
+	cavalry_power = 0.05
+	prestige = 0.025
+		
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+silk_road_trade = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				
+			}
+		controlled_by = ROOT	
+		}	
+
+	trade_steering = 0.05
+	local_autonomy = -0.02
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+birthplace_of_civilisation = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		
+		controlled_by = ROOT	
+		}	
+
+	local_development_cost = -0.05
+	local_build_cost = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+rhine_prosperity = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		
+		controlled_by = ROOT	
+		}	
+
+	local_development_cost = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+portuguese_macau = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				tag = POR
+				tag = PBR
+			}
+		controlled_by = ROOT	
+		}
+
+	trade_efficiency = 0.05
+	prestige = 0.015
+	global_ship_trade_power = 0.05
+	ship_durability = 0.01
+
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+great_british_singapore = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				tag = ENG
+				tag = GBR
+				tag = ANG
+			}
+		controlled_by = ROOT	
+		}
+
+	trade_efficiency = 0.05
+	prestige = 0.015
+	global_ship_trade_power = 0.05
+	ship_durability = 0.01
+
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+owner_of_vienna = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = HAB 
+						tag = HAB
+					} 
+				} 
+				NOT = {
+					OR = {
+						was_tag = AUH 
+						tag = AUH
+					} 
 				}
 			}
-		}
-	}
+		controlled_by = ROOT	
+		}	
 
-	trigger = {
+	discipline = 0.025
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
 	}
-
-	local_amount_of_banners = 40
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_400 = {
+trade_city_of_the_adriatic = {
 	potential = {
-		owner = {
-			total_development = 401
-			NOT = { total_development = 500 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
-	}
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = VEN
+						tag = VEN
+					} 
+				} 
+			}
+		controlled_by = ROOT	
+		}
 
-	local_amount_of_banners = 50
+	trade_efficiency = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_500 = {
+training_fields_of_the_hussars = {
 	potential = {
-		owner = {
-			total_development = 501
-			NOT = { total_development = 600 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
-	}
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = POL
+						tag = POL
+					} 
+				} 
+				NOT = {
+					OR = {
+						was_tag = MAZ
+						tag = MAZ
+					} 
+				} 
+			}
+		controlled_by = ROOT	
+		}	
 
-	local_amount_of_banners = 55
+	cavalry_power = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_600 = {
+bastion_of_beijing = {
 	potential = {
-		owner = {
-			total_development = 601
-			NOT = { total_development = 700 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
+		normal_or_historical_nations = yes
+		has_province_flag = wei_existed
 	}
 
 	trigger = {
-	}
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = WEI
+						tag = WEI
+					} 
+				} 
+			}
+		controlled_by = ROOT	
+		}	
 
-	local_amount_of_banners = 60
+	cavalry_power = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_700 = {
+capture_of_canton = {
 	potential = {
-		owner = {
-			total_development = 701
-			NOT = { total_development = 800 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
+		normal_or_historical_nations = yes
+		has_province_flag = wuu_existed
 	}
 
 	trigger = {
-	}
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = WUU 
+						tag = WUU
+					} 
+				} 
+			}
+		controlled_by = ROOT	
+		}	
 
-	local_amount_of_banners = 65
+	land_morale = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_800 = {
+occupation_of_chengdu = {
 	potential = {
-		owner = {
-			total_development = 801
-			NOT = { total_development = 900 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
+		normal_or_historical_nations = yes
+		has_province_flag =shu_existed
 	}
 
 	trigger = {
-	}
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = SHU
+						tag = SHU
+					} 
+				} 
+			}
+		controlled_by = ROOT	
+		}	
 
-	local_amount_of_banners = 70
+	artillery_power = 0.025
+	infantry_power = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_900 = {
+occupation_of_ayutthaya = {
 	potential = {
-		owner = {
-			total_development = 901
-			NOT = { total_development = 1000 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
-	}
+		owner = {
+				NOT = {
+					OR = {
+						was_tag = AYU
+						tag = AYU
+					}
+				}  
+			}
+		controlled_by = ROOT	
+		}
 
-	local_amount_of_banners = 75
+	cavalry_power = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_1000 = {
+fall_of_pest = {
 	potential = {
-		owner = {
-			total_development = 1001
-			NOT = { total_development = 1100 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
-	}
-
-	local_amount_of_banners = 80
-}
-
-titan_banner_1100 = {
-	potential = {
 		owner = {
-			total_development = 1101
-			NOT = { total_development = 1200 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
+				NOT = {
+					OR = {
+						was_tag = HUN
+						tag = HUN
+					} 
+				} 
 			}
-		}
-	}
+		controlled_by = ROOT	
+		}	
 
-	trigger = {
+	infantry_power = 0.025
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
 	}
-
-	local_amount_of_banners = 85
+	
+	on_deactivation = {
+	
+	}
 }
 
-titan_banner_1200 = {
-	potential = {
-		owner = {
-			total_development = 1201
-			NOT = { total_development = 1300 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 90
-}
-
-titan_banner_1300 = {
-	potential = {
-		owner = {
-			total_development = 1301
-			NOT = { total_development = 1400 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 95
-}
-
-titan_banner_1400 = {
-	potential = {
-		owner = {
-			total_development = 1401
-			NOT = { total_development = 1500 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 100
-}
-
-titan_banner_1500 = {
-	potential = {
-		owner = {
-			total_development = 1501
-			NOT = { total_development = 1600 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 105
-}
-
-titan_banner_1600 = {
-	potential = {
-		owner = {
-			total_development = 1601
-			NOT = { total_development = 1700 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 110
-}
-
-titan_banner_1700 = {
-	potential = {
-		owner = {
-			total_development = 1701
-			NOT = { total_development = 1800 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 115
-}
-
-titan_banner_1800 = {
-	potential = {
-		owner = {
-			total_development = 1801
-			NOT = { total_development = 1900 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 120
-}
-
-titan_banner_1900 = {
-	potential = {
-		owner = {
-			total_development = 1901
-			NOT = { total_development = 2000 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 125
-}
-
-titan_banner_2000 = {
-	potential = {
-		owner = {
-			total_development = 2001
-			NOT = { total_development = 2200 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 130
-}
-
-titan_banner_2200 = {
-	potential = {
-		owner = {
-			total_development = 2201
-			NOT = { total_development = 2400 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 135
-}
-
-titan_banner_2400 = {
-	potential = {
-		owner = {
-			total_development = 2401
-			NOT = { total_development = 2600 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 140
-}
-
-titan_banner_2600 = {
-	potential = {
-		owner = {
-			total_development = 2601
-			NOT = { total_development = 2800 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 145
-}
-
-titan_banner_2800 = {
-	potential = {
-		owner = {
-			total_development = 2801
-			NOT = { total_development = 3000 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 150
-}
-
-titan_banner_3000 = {
-	potential = {
-		owner = {
-			total_development = 3001
-			NOT = { total_development = 3200 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 155
-}
-
-titan_banner_3200 = {
-	potential = {
-		owner = {
-			total_development = 3201
-			NOT = { total_development = 3400 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 160
-}
-
-titan_banner_3400 = {
-	potential = {
-		owner = {
-			total_development = 3401
-			NOT = { total_development = 3600 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 165
-}
-
-titan_banner_3600 = {
-	potential = {
-		owner = {
-			total_development = 3601
-			NOT = { total_development = 3800 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 170
-}
-
-titan_banner_3800 = {
-	potential = {
-		owner = {
-			total_development = 3801
-			NOT = { total_development = 4000 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 175
-}
-
-titan_banner_4000 = {
-	potential = {
-		owner = {
-			total_development = 4001
-			NOT = { total_development = 4200 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 180
-}
-
-titan_banner_4200 = {
-	potential = {
-		owner = {
-			total_development = 4201
-			NOT = { total_development = 4400 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 185
-}
-
-titan_banner_4400 = {
-	potential = {
-		owner = {
-			total_development = 4401
-			NOT = { total_development = 4600 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 190
-}
-
-titan_banner_4600 = {
-	potential = {
-		owner = {
-			total_development = 4601
-			NOT = { total_development = 4800 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 195
-}
-
-titan_banner_4800 = {
-	potential = {
-		owner = {
-			total_development = 4801
-			NOT = { total_development = 5000 }
-		ai = no
-			NOT = {
-				num_of_owned_provinces_with = {
-					value = 2
-					has_province_flag = titan_player_has_mercs
-				}
-			}
-		}
-	}
-
-	trigger = {
-	}
-
-	local_amount_of_banners = 200
-}
 

@@ -1,0 +1,101 @@
+tao_doctrine = {
+	is_blessing = yes
+
+	modifier = {
+		manpower_in_true_faith_provinces = 0.15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				OR = {
+					legitimacy = 70
+					republican_tradition = 70
+					devotion = 70
+				}
+			}
+		}
+	}
+}
+
+wuwei_doctrine = {
+	is_blessing = yes
+
+	modifier = {
+		global_autonomy = -0.05
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				manpower = 4
+			}
+		}
+	}
+}
+
+ziran_doctrine = {
+	is_blessing = yes
+
+	modifier = {
+		idea_cost = -0.05
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.9
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.7
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.5
+			}
+		}
+	}
+}
+
+three_treasures_doctrine = {
+	is_blessing = yes
+
+	modifier = {
+		global_unrest = -1
+		core_creation = -0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			overextension_percentage = 0.7
+		}
+		modifier = {
+			factor = 3
+			overextension_percentage = 0.5
+		}
+	}
+}
+
+yingyang_doctrine = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+		horde_unity = 0.5
+		republican_tradition = 0.25
+		devotion = 0.5
+		prestige = 1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}

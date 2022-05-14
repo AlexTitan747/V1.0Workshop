@@ -417,7 +417,7 @@ dip_policy_31 = {
 		full_idea_group = quantity_ideas
 	}
 	
-	amount_of_banners = 0.25
+	mercenary_manpower = 0.5
 	movement_speed = 0.05
 	
 	ai_will_do = {
@@ -499,8 +499,7 @@ dip_policy_29 = {
 		full_idea_group = defensive_ideas
 	}
 	
-	discipline = 0.05
-	merc_maintenance_modifier = -0.25
+	infantry_fire = 0.2
 	
 	ai_will_do = {
 		factor = 0.6
@@ -1155,7 +1154,7 @@ dip_policy_13 = {
 		full_idea_group = assault_ideas
 	}
 	
-	native_advancement_cost = -0.5
+	
 	native_uprising_chance = -0.25
 	
 	ai_will_do = {
@@ -1278,31 +1277,10 @@ dip_policy_10 = {
 		full_idea_group = guild_ideas
 	}
 	
-	privateer_efficiency = 0.2
-	center_of_trade_upgrade_cost = -0.2
+	production_efficiency = 0.15
 	
 	ai_will_do = {
-		factor = 0.6
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}
-		modifier = {
-			factor = 1.5
-			navy_size = 50
-		}
-		modifier = {
-			factor = 1.5
-			navy_size = 100
-		}			
-		modifier = {
-			factor = 1.5
-			navy_size = 150
-		}
-		modifier = {
-			factor = 1.5
-			navy_size = 200
-		}		
+		factor = 0.6		
 	}	
 }
 
@@ -1441,8 +1419,7 @@ dip_policy_6 = {
 		full_idea_group = bureaucratic_ideas
 	}
 	
-	merchants = 1
-	vassal_income = 0.25
+	global_manpower_modifier = 0.15
 	
 	ai_will_do = {
 		factor = 0.6
@@ -1525,47 +1502,6 @@ dip_policy_4 = {
 	
 	movement_speed = 0.05
 	trade_efficiency = 0.1
-	
-	ai_will_do = {
-		factor = 0.6
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}
-		modifier = {
-			factor = 1.5
-			navy_size = 50
-		}
-		modifier = {
-			factor = 1.5
-			navy_size = 100
-		}			
-		modifier = {
-			factor = 1.5
-			navy_size = 150
-		}
-		modifier = {
-			factor = 1.5
-			navy_size = 200
-		}		
-	}	
-}
-
-dip_policy_3 = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = trade_ideas
-		has_idea_group = quantity_ideas
-	}
-	
-	allow = {
-		full_idea_group = trade_ideas
-		full_idea_group = quantity_ideas
-	}
-	
-	production_efficiency = 0.15
-	
 	
 	ai_will_do = {
 		factor = 0.6

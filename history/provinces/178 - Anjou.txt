@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Anjou
+add_core = AJO
+owner = AJO
+controller = AJO
+culture = cosmopolitan_french
+religion = catholic
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 5
+capital = "Anjou"
+is_city = yes
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = muslim

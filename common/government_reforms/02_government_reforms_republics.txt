@@ -20,192 +20,6 @@ republic_mechanic = {
 
 #Oligarchy vs Merchant Class vs Noble Elite
 
-shophet_republic = {
-    icon = "people_walking"
-    allow_normal_conversion = no
-    valid_for_nation_designer = yes
-    nation_designer_cost = 0
-    royal_marriage = yes
-    potential = {
-		OR = {
-			tag = CRG
-		}
-    }
-    duration = 4
-    has_parliament = yes
-    modifiers = {
-		num_accepted_cultures = 2
-		discipline = 0.025
-		global_unrest = -1
-		republican_tradition = 0.5
-    }
-}
-
-council_of_elders = {
-    icon = "politician"
-    allow_normal_conversion = no
-    valid_for_nation_designer = yes
-    nation_designer_cost = 0
-    royal_marriage = yes
-    potential = {
-        religion_group = muslim
-    }
-    duration = 4
-    modifiers = {
-        manpower_in_true_faith_provinces = 0.2
-		trade_efficiency = 0.1
-		interest = -0.5
-    }
-}
-
-patriarchal_republic = {
-    icon = "politician"
-    allow_normal_conversion = no
-    valid_for_nation_designer = yes
-    nation_designer_cost = 0
-    royal_marriage = yes
-    potential = {
-        religion = orthodox
-		NOT = { culture_group = east_slavic }
-    }
-    duration = 4
-    modifiers = {
-        manpower_in_true_faith_provinces = 0.2  
-		build_cost = -0.1
-		caravan_power = 0.1
-    }
-}
-
-chinese_merchant_state_reform = {
-	icon = "people_walking"
-	allow_normal_conversion = no
-	valid_for_nation_designer = yes
-	lock_level_when_selected = yes
-	fixed_rank = 1
-	nation_designer_cost = 0
-	potential = {
-			OR = {	
-			tag = JNG 
-			tag = ZHJ
-			tag = FUA
-			tag = GDO 
-			tag = GXI
-			tag = HNA 
-			tag = JIX
-			tag = AUI
-			tag = SAN
-			tag = LNI
-			tag = HEN
-			tag = HEI
-			tag = SCH
-			tag = SXI
-			tag = YNA
-			tag = ALI
-			tag = GSU
-			tag = ORO
-			tag = WEI
-			tag = SHU
-			tag = WUU
-			tag = EPC
-			}
-		}
-	modifiers = {
-		trade_efficiency = 0.1
-		shock_damage_received = -0.05
-		burghers_loyalty_modifier = 0.05
-		diplomatic_reputation = -2
-	}
-
-}
-
-
-
-chinese_trading_kingdom_reform = {
-	icon = "merchant_ship"
-	allow_normal_conversion = no
-	valid_for_nation_designer = yes
-	lock_level_when_selected = yes
-	fixed_rank = 2
-	nation_designer_cost = 0
-	potential = {
-			OR = {	
-			tag = JNG 
-			tag = ZHJ
-			tag = FUA
-			tag = GDO 
-			tag = GXI
-			tag = HNA 
-			tag = JIX
-			tag = AUI
-			tag = SAN
-			tag = LNI
-			tag = HEN
-			tag = HEI
-			tag = SCH
-			tag = SXI
-			tag = YNA
-			tag = ALI
-			tag = GSU
-			tag = ORO
-			tag = WEI
-			tag = SHU
-			tag = WUU
-			tag = EPC
-			}
-		}
-
-	modifiers = {
-		trade_efficiency = 0.15
-		shock_damage_received = -0.1
-		burghers_loyalty_modifier = 0.05
-		diplomatic_reputation = -1
-	}
-
-}
-
-
-grand_plutocratic_empire_reform = {
-	icon = "general_eastern_administrative"
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	fixed_rank = 3
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	potential = {
-			OR = {	
-			tag = JNG 
-			tag = ZHJ
-			tag = FUA
-			tag = GDO 
-			tag = GXI
-			tag = HNA 
-			tag = JIX
-			tag = AUI
-			tag = SAN
-			tag = LNI
-			tag = HEN
-			tag = HEI
-			tag = SCH
-			tag = SXI
-			tag = YNA
-			tag = ALI
-			tag = GSU
-			tag = ORO
-			tag = WEI
-			tag = SHU
-			tag = WUU
-			tag = EPC
-			}
-		}
-	modifiers = {
-		merchants = 1
-		trade_efficiency = 0.2
-		discipline = 0.025
-		burghers_loyalty_modifier = 0.05
-	}
-
-}
-
 oligarchy_reform = {
 	icon = "people_walking"
 	allow_normal_conversion = yes
@@ -249,8 +63,8 @@ oligarchy_reform = {
 		NOT = { culture_group = latin }
 	}
 	modifiers = {
-		global_tax_modifier = 0.05
-		max_absolutism = -40
+		global_tax_modifier = 0.10
+		max_absolutism = -20
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -277,8 +91,8 @@ signoria_reform = {
 	}
 	modifiers = {
 		candidate_random_bonus = 1
-		global_tax_modifier = 0.05
-		max_absolutism = -30
+		global_tax_modifier = 0.10
+		max_absolutism = -25
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -637,7 +451,6 @@ noble_elite_reform = {
 	}
 	modifiers = {
 		army_tradition = 0.10
-		max_absolutism = -20
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
@@ -1063,24 +876,20 @@ veche_republic = {
 	}
 	modifiers = {
 		merchants = 1
-		trade_goods_size_modifier = 0.05
+		global_trade_goods_size_modifier = 0.05
 		land_morale = 0.05
 		governing_capacity = 100
 		max_absolutism = -50
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
+	duration = 5
 	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			NOT = { has_dlc = "Mare Nostrum" }
-			NOT = { has_dlc = "Res Publica" }
-		}
+	allow = { has_dlc = "Third Rome" }
 		government_abilities = {
 			russian_mechanic
 		}
 	}
-	duration = 5
 }
 
 russian_republic = {
@@ -1112,14 +921,11 @@ russian_republic = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	conditional = {
-		allow = {
-			has_dlc = "Third Rome"
-			NOT = { has_dlc = "Mare Nostrum" }
-			NOT = { has_dlc = "Res Publica" }
-		}
+		allow = { has_dlc = "Third Rome" }
 		government_abilities = {
 			russian_mechanic
 		}
+		claim_states = yes
 	}
 	duration = 5
 }
@@ -1463,7 +1269,7 @@ republican_authoritarianism_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -1
+		yearly_army_professionalism = 0.005
 	}
 	ai = {
 		factor = 1
@@ -1792,6 +1598,7 @@ provincial_governments_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		state_maintenance_modifier = -0.25
+		culture_conversion_cost = -0.15
 	}
 	ai = {
 		factor = 1
@@ -1866,7 +1673,27 @@ presidential_reform = {
 	icon = "man_on_podium"
 	allow_normal_conversion = yes
 	modifiers = {
-		embracement_cost = -0.1
+		embracement_cost = -0.2
+		innovativeness_gain = 0.25
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_reform = free_city
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_cities = 2 }
+		}
+	}
+}
+
+advising_council = {
+	icon = "politician"
+	allow_normal_conversion = yes
+	modifiers = {
+		idea_cost = -0.05
 	}
 	ai = {
 		factor = 1
@@ -1994,11 +1821,22 @@ broaden_executive_powers_reform = {
 	}
 }
 
-devolution_of_powers_reform = {
+further_administrative_duties_reform = {
 	icon = "generic_people"
 	allow_normal_conversion = yes
 	modifiers = {
-		diplomats = 1
+		country_admin_power = 1
+	}
+	ai = {
+		factor = 1.5
+	}
+}
+
+devolution_of_powers_reform = {
+	icon = "government_for_people_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		country_diplomatic_power = 1
 	}
 	ai = {
 		factor = 1.5
@@ -2199,7 +2037,8 @@ citizenry_reform = {
 		}
 	}
 	modifiers = {
-		land_morale = 0.1
+		land_morale = 0.05
+		leader_land_fire = 1
 	}
 	ai = {
 		factor = 1.5
@@ -2211,20 +2050,15 @@ admiralty_reform = {
 	allow_normal_conversion = yes
 	# no legacy equivalent. own Dharama or Emperor
 	potential = {
-		is_revolutionary = no
-	}
-	trigger = {
-		full_idea_group = naval_ideas
-		NOT = { has_reform = pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
 	}
 	modifiers = {
 		leader_naval_fire = 1
-		republican_tradition = -0.5
+		naval_morale = 0.05
 	}
-	custom_attributes = {
-		admirals_become_rulers = yes
-	}
-	has_term_election = no
 	
 	ai = {
 		factor = 0
@@ -2304,7 +2138,7 @@ bureaucratic_aparatus_reform = {
 	icon = "map_2"
 	allow_normal_conversion = yes
 	modifiers = {
-		min_autonomy_in_territories = -0.10
+		interest = -0.5
 	}
 }
 
@@ -2313,7 +2147,7 @@ universal_suffrage_reform = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes
 	modifiers = {
-		num_accepted_cultures = 1
+		num_accepted_cultures = 2
 	}
 	ai = {
 		factor = 1
@@ -2350,9 +2184,10 @@ pirates_become_republic_reform = {
 seize_executive_power_reform = {
 	icon = "king_2_highlighted"
 	allow_normal_conversion = yes
-
+	potential = {
+		exists = HIN
+	}
 	trigger = {
-		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
 
 	modifiers = {
@@ -2379,8 +2214,10 @@ seize_executive_power_reform = {
 proclaim_divine_guidance_reform = {
 	icon = "religious_leader_highlighted"
 	allow_normal_conversion = yes
+	potential = {
+		exists = HIN
+	}
 	trigger = {
-		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
 	modifiers = {
 	}
@@ -2402,6 +2239,7 @@ strengthen_executive_powers_reform = {
 	}
 	modifiers = {
 		max_absolutism = 25
+		yearly_absolutism = 0.5
 	}
 }
 
@@ -2409,8 +2247,16 @@ reinforce_republican_values_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
 	modifiers = {
-		free_adm_policy = 1
-		reelection_cost = -0.1
+		prestige = 1
+		reelection_cost = -0.25
+	}
+}
+
+give_control_to_the_guilds = {
+	icon = "merchant"
+	allow_normal_conversion = yes
+	modifiers = {
+		production_efficiency = 0.1
 	}
 }
 

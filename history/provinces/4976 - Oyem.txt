@@ -1,0 +1,17 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Oyem
+culture = kongolese
+religion = shamanism
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 1
+trade_goods = unknown
+native_size = 40
+native_ferocity = 2
+native_hostileness = 5
+capital = "Oyem"
+is_city = no
+
+discovered_by = central_african
+discovered_by = sub_saharan

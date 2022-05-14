@@ -3,6 +3,7 @@ country_decisions = {
 	zealandia_nation = {
 		major = yes
 		potential = {
+			ai = no
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			was_never_end_game_tag_trigger = yes
 			NOT = { tag = HLR }
@@ -51,7 +52,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_australia
